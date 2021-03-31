@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <button mat-button (click)="goHome()"> Home</button>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="getUsers()" color="primary">Persons</button>
+  </mat-menu>
+  <button mat-button (click)="getLogin()"> Login</button>
+
+</mat-toolbar>

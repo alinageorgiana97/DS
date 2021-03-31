@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="528.145" y="1.201171875">com.example.tema1.dto</node>
+    <node x="0.0" y="350.201171875">com.example.tema1.repository.CaregiverRepository</node>
+    <node x="178.0" y="127.201171875">com.example.tema1.service.UserService</node>
+    <node x="58.879999999999995" y="203.201171875">com.example.tema1.controller.CaregiverRestController</node>
+    <node x="792.0" y="127.201171875">com.example.tema1.service.PatientService</node>
+    <node x="0.0" y="127.201171875">com.example.tema1.service.CaregiverService</node>
+    <node x="956.0" y="127.201171875">com.example.tema1.service.MedicationService</node>
+    <node x="635.0" y="127.201171875">com.example.tema1.mapper.PatientMapper</node>
+    <node x="321.0" y="127.201171875">com.example.tema1.mapper.UserMapper</node>
+    <node x="457.0" y="127.201171875">com.example.tema1.mapper.MedicationMapper</node>
+    <node x="35.0" y="274.201171875">com.example.tema1.entity.Caregiver</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.tema1.controller.CaregiverRestController" target="com.example.tema1.service.CaregiverService">
+      <point x="-69.0" y="-13.0" />
+      <point x="93.38" y="178.201171875" />
+      <point x="39.5" y="178.201171875" />
+      <point x="-39.5" y="13.0" />
+    </edge>
+    <edge source="com.example.tema1.mapper.PatientMapper" target="com.example.tema1.dto">
+      <point x="0.0" y="-13.0" />
+      <point x="703.5" y="107.201171875" />
+      <point x="597.695" y="107.201171875" />
+      <point x="16.050000000000068" y="13.0" />
+    </edge>
+    <edge source="com.example.tema1.dto" target="com.example.tema1.dto">
+      <point x="-37.45" y="13.0" />
+      <point x="544.1949999999999" y="57.201171875" />
+      <point x="498.145" y="57.201171875" />
+      <point x="498.145" y="7.701171875" />
+      <point x="-53.5" y="-6.5" />
+    </edge>
+    <edge source="com.example.tema1.service.UserService" target="com.example.tema1.dto">
+      <point x="0.0" y="-13.0" />
+      <point x="239.5" y="87.201171875" />
+      <point x="565.595" y="87.201171875" />
+      <point x="-16.049999999999955" y="13.0" />
+    </edge>
+    <edge source="com.example.tema1.repository.CaregiverRepository" target="com.example.tema1.entity.Caregiver">
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="com.example.tema1.mapper.MedicationMapper" target="com.example.tema1.dto">
+      <point x="0.0" y="-13.0" />
+      <point x="536.0" y="107.201171875" />
+      <point x="586.995" y="107.201171875" />
+      <point x="5.350000000000023" y="13.0" />
+    </edge>
+    <edge source="com.example.tema1.controller.CaregiverRestController" target="com.example.tema1.dto">
+      <point x="69.0" y="-13.0" />
+      <point x="231.38" y="178.201171875" />
+      <point x="1131.5" y="178.201171875" />
+      <point x="1131.5" y="77.201171875" />
+      <point x="629.795" y="77.201171875" />
+      <point x="48.14999999999998" y="13.0" />
+    </edge>
+    <edge source="com.example.tema1.service.CaregiverService" target="com.example.tema1.dto">
+      <point x="0.0" y="-13.0" />
+      <point x="79.0" y="77.201171875" />
+      <point x="554.895" y="77.201171875" />
+      <point x="-26.75" y="13.0" />
+    </edge>
+    <edge source="com.example.tema1.service.PatientService" target="com.example.tema1.dto">
+      <point x="0.0" y="-13.0" />
+      <point x="864.0" y="97.201171875" />
+      <point x="608.395" y="97.201171875" />
+      <point x="26.75" y="13.0" />
+    </edge>
+    <edge source="com.example.tema1.service.MedicationService" target="com.example.tema1.dto">
+      <point x="0.0" y="-13.0" />
+      <point x="1038.5" y="87.201171875" />
+      <point x="619.095" y="87.201171875" />
+      <point x="37.450000000000045" y="13.0" />
+    </edge>
+    <edge source="com.example.tema1.mapper.UserMapper" target="com.example.tema1.dto">
+      <point x="0.0" y="-13.0" />
+      <point x="379.0" y="97.201171875" />
+      <point x="576.295" y="97.201171875" />
+      <point x="-5.350000000000023" y="13.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="560.0" y="162.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

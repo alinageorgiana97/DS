@@ -1,0 +1,81 @@
+<script src="patient.component.ts"></script>
+<div class="container">
+  <h2> Patients</h2>
+  <div *ngIf="patients.length == 0">
+    <div class="alert alert-info" role="alert">Loading...</div>
+  </div>
+  <table class="table table-dark">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Delete</th>
+
+    </tr>
+    </thead>
+    <tbody *ngFor="let patient of patients">
+    <tr>
+      <td>{{patient.name}}</td>
+      <td>{{patient.address}}</td>
+      <td>{{patient.gender}}</td>
+      <td>
+        <button class="btn btn-primary" (click)="deletePatient(patient)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+    <h3>Insert new patient</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+      <div id="container">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" class="form-control" [ngModel]="patientInsert?.name"/>
+
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <input type="text" name="address" class="form-control"
+                 [ngModel]="patientInsert?.address"/>
+
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <input type="text" name="gender" class="form-control"
+                 [ngModel]="patientInsert?.gender"/>
+
+        </div>
+        <div class="form-group">
+          <label>Birth Date</label>
+          <input type="text" name="birthDate" class="form-control"
+                 [ngModel]="patientInsert?.birthDate"/>
+
+        </div>
+        <div class="form-group">
+          <label>Medical Record</label>
+          <input type="text" name="medicalRecord" class="form-control"
+                 [ngModel]="patientInsert?.medicalRecord"/>
+
+        </div>
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" name="username" class="form-control"
+                 [ngModel]="patientInsert?.userDTO?.username"/>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="text" name="password" class="form-control"
+                 [ngModel]="patientInsert?.userDTO?.password"/>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Insert</button>
+        </div>
+        </div>
+        </div>
+      </div>
+    </form>
+
